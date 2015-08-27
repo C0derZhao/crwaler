@@ -10,9 +10,9 @@ public class DBBean {
 	private PreparedStatement stmt = null;
 	private ResultSet rs = null;
 	private static final String DRIVER = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-	private static final String URL = "jdbc:sqlserver://172.16.58.2;DatabaseName=TCBasePOI;SelectMethod=cursor";
-	private static final String USER = "sa";
-	private static final String PASS ="sa3210.";
+	private static final String URL = "";
+	private static final String USER = "";
+	private static final String PASS ="";
 	public DBBean()throws Exception {
 		Class.forName(DRIVER);
 		con = DriverManager.getConnection(URL, USER, PASS);
