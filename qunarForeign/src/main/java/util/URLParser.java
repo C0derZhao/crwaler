@@ -16,14 +16,14 @@ public class URLParser {
         if (null == pageUrl) {
             return null;
         }
-        return HttpUtil.getUrlContent(HttpClientManager.getCloseableHttpClient(), null, new HttpHost("172.16.58.188", 9999, "http"), pageUrl, null, "UTF-8");
+        return HttpUtil.getUrlContent(HttpClientManager.getCloseableHttpClient(), null, new HttpHost("", , "http"), pageUrl, null, "UTF-8");
     }
 
     public static String postContent(String pageUrl, Map<String, String> params){
         if (null == pageUrl) {
             return null;
         }
-        return HttpUtil.postUrlContent(HttpClientManager.getCloseableHttpClient(), null, new HttpHost("172.16.58.188", 9999, "http"), pageUrl, params,
+        return HttpUtil.postUrlContent(HttpClientManager.getCloseableHttpClient(), null, new HttpHost("", , "http"), pageUrl, params,
         null, "UTF-8");
     }
 
